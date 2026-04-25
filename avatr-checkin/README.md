@@ -15,9 +15,11 @@ https://raw.githubusercontent.com/rader124124/surge_scripts/rm/avatr-checkin/ava
 
 1. 在 iPhone 的 Surge 里开启 HTTPS 解密，并安装、信任 Surge CA 证书。
 2. 在 Surge 里通过上面的 Raw URL 导入并启用 module。
-3. 打开一次阿维塔 App，让它调用 `getNewToken`。你应该会收到“已更新登录态”的通知。
-4. 进入一次“积分/任务中心”页面。你应该会收到“已捕获签到上下文”的通知。
+3. 打开一次阿维塔 App，让它调用 `getNewToken`。
+4. 进入一次“积分/任务中心”页面，让脚本捕获签到上下文。
 5. 之后 cron 会在每天 09:15 自动执行。你也可以改 `cronexp`。
+
+默认是安静模式：捕获登录态、捕获签到上下文、签到成功都不通知；只有缺少登录态、刷新失败、签到失败等异常才会通知。
 
 ## 抓包里确认到的接口
 
