@@ -22,8 +22,8 @@ const CONFIG = {
   os: "IOS",
   application: "AVATR_APP",
   timeout: 30000,
-  notifyOnCapture: true,
-  notifyOnSuccess: true,
+  notifyOnCapture: false,
+  notifyOnSuccess: false,
   notifyOnFailure: true
 };
 
